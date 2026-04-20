@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Boado | Portoflio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Navgivation bar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">Sam Boado</h2>
+            </a>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item"><a href="#hero-section" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#testimonials-section" class="nav-link">Skillset</a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link">Contact</a></li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="hero-section" id="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h3 class="title">Hi! I am</h3>
+                    <h2 class="subtitle">Reinard Sam Boado</h2>
+                    <h3 class="title">And I am <span class="multiple-text"></span></h3>
+                    <p class="description">Proactive and dependable individual with a passion for solving problems and
+                        improving processes. Known
+                        for strong communication skills, quick learning, and a hands-on approach to achieving results.
+                    </p>
+                    <div class="buttons">
+                        <a href="#contact-section" class="button contact-us">Contact me</a>
+                        <a href="assets/Reinard Sam Boado Resume.pdf" target="_blank" class="button download-cv">Download CV</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="assets/IMG_9387.jpeg" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about-section">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="assets/IMG_9679.jpeg" alt="" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="text">I have experience as a front-end developer and graphic designer, where I create
+                        responsive and visually engaging designs. I am also knowledgeable in areas such as Arduino, LEGO
+                        robotics, and 3D modeling using SketchUp, which has strengthened my problem-solving and
+                        technical skills.</p>
+                    <div class="social-link-list">
+                        <a href="https://www.facebook.com/reinardsam/" target="_blank" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="mailto:reinardsamboado@gmail.com" target="_blank" class="social-link"><i
+                                class="fa-regular fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/reinard-sam-boado/" target="_blank" class="social-link"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://ph.jobstreet.com/profiles/reinardsam-boado-0rMYWdxy6g" target="_blank" class="social-link"><i class="fa-solid fa-briefcase"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <!-- <section class="menu-section" id="menu-section">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="assets/hot-beverages.png" alt="Hot Beverage" class="menu-image">
+                        <h3 class="name">Hot Beverages</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloremque placeat deleniti veritatis tenetur voluptatibus consequatur, tempora voluptates dolorem obcaecati!</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="assets/cold-beverages.png" alt="Cold Beverage" class="menu-image">
+                        <h3 class="name">Cold Beverages</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloremque placeat deleniti veritatis tenetur voluptatibus consequatur, tempora voluptates dolorem obcaecati!</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="assets/burger-frenchfries.png" alt="Burger and French Fries" class="menu-image">
+                        <h3 class="name">Burger and Fries</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloremque placeat deleniti veritatis tenetur voluptatibus consequatur, tempora voluptates dolorem obcaecati!</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="assets/desserts.png" alt="Dessert" class="menu-image">
+                        <h3 class="name">Dessert</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloremque placeat deleniti veritatis tenetur voluptatibus consequatur, tempora voluptates dolorem obcaecati!</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="assets/refreshment.png" alt="Refreshments" class="menu-image">
+                        <h3 class="name">Refreshments</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloremque placeat deleniti veritatis tenetur voluptatibus consequatur, tempora voluptates dolorem obcaecati!</p>
+                    </li>
+                    <li class="menu-item">
+                        <img src="assets/special-combo.png" alt="Special Combo" class="menu-image">
+                        <h3 class="name">Special Combo</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloremque placeat deleniti veritatis tenetur voluptatibus consequatur, tempora voluptates dolorem obcaecati!</p>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+
+        <!-- testimonials -->
+        <section class="testimonials-section" id="testimonials-section">
+            <h2 class="section-title">Technical Skillset</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/html.png" alt="" class="user-image">
+                                <h3 class="name">HTML</h3>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/css.png" alt="" class="user-image">
+                                <h3 class="name">CSS</h3>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/js.png" alt="" class="user-image">
+                                <h3 class="name">JavaScript</h3>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/php.png" alt="" class="user-image">
+                                <h3 class="name">PHP</h3>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/arduino.png" alt="" class="user-image">
+                                <h3 class="name">Arduino</h3>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/microbit.jpg" alt="" class="user-image">
+                                <h3 class="name">Micro:bit Programming</h3>
+                            </li>
+
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/ps.png" alt="" class="user-image">
+                                <h3 class="name">Adobe Photoshop</h3>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="assets/davinci.png" alt="" class="user-image">
+                                <h3 class="name">DaVinci Resolve</h3>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-slide-button swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <!-- <section class="gallery-section" id="gallery-section">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item"><img src="assets/gallery-1.jpg" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="assets/gallery-2.jpg" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="assets/gallery-3.jpg" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="assets/gallery-4.jpg" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="assets/gallery-5.jpg" class="gallery-image"></li>
+                    <li class="gallery-item"><img src="assets/gallery-6.jpg" class="gallery-image"></li>
+                </ul>
+            </div>
+        </section> -->
+
+        <!-- Contact section -->
+        <section class="contact-section" id="contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Pasay City, Metro Manila</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>reinardsamboado@gmail.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>+639464920486</p>
+                    </li>
+                </ul>
+                <form action="https://formspree.io/f/mvzwevvr" method="POST" class="contact-form" id="contact-form">
+                    <input type="text" name="name" id="name" placeholder="Your name" class="form-input" required>
+                    <input type="email" name="email" id="email" placeholder="Your email" class="form-input" required>
+                    <textarea id="message" name="message" placeholder="Your message" class="form-input"
+                        required></textarea>
+                    <div class="buttons">
+                        <button type="submit" class="submit-button">Submit</button>
+                        <button type="button" class="clear-button" id="clear-button">Clear Contents</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">&copy; Reinard Sam Boado | 2026</p>
+
+                <div class="social-link-list">
+                    <a href="https://www.facebook.com/reinardsam/" target="_blank" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="mailto:reinardsamboado@gmail.com" target="_blank" class="social-link"><i
+                            class="fa-regular fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/reinard-sam-boado/" target="_blank" class="social-link"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://ph.jobstreet.com/profiles/reinardsam-boado-0rMYWdxy6g" target="_blank" class="social-link"><i class="fa-solid fa-briefcase"></i></a>
+                </div>
+                <!-- <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="policy-link">Refund Policy</a>
+                </p> -->
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

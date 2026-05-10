@@ -728,6 +728,9 @@ header .navbar{
         align-items: center;
         flex-direction: column-reverse;
     }
+    .cv-section .cv-details .char-reference li{
+        text-align: left;
+    }
 }
 
 /* Resposive 640px */

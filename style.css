@@ -4,11 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
     scroll-behavior: smooth;
 }
 
 :root{
+    /* font */
+    --main-font: 'Poppins', sans-serif;
+
     /* colors */
     --white-color: #fff;
     --dark-color: #1B3C53;
@@ -509,6 +512,108 @@ header .navbar{
 .footer-section .policy-text .separator{
     margin: 0 5px;
     color: var(--white-color);
+}
+
+/* CV Page details */
+.cv-section {
+    display: flow-root; 
+}
+
+.cv-section .cv-details, 
+.cv-section .cv-details p, 
+.cv-section .cv-details span, 
+.cv-section .cv-details h2, 
+.cv-section .cv-details h3, 
+.cv-section .cv-details .links,
+.cv-section .cv-details ul li {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.cv-section .section-content {
+    padding-top: 20px; /* Use padding to create space at the top */
+    padding-bottom: 20px;
+    max-width: 1000px;
+}
+
+/* Apply the font once to the entire section */
+.cv-section{
+    --main-font: 'Times New Roman', Times, serif;
+}
+
+.cv-section .cv-details {
+    color: black;
+}
+
+.cv-section .cv-details > *{
+    display: block;
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cv-section .section-content .cv-details .text, 
+.cv-section .section-content .cv-details .links{
+    font-size: var(--font-size-m); 
+    color: black;
+    transition: 0.2s ease;
+}
+
+.cv-section .section-content .cv-details .links:visited{
+    color: black;
+}
+
+.cv-section .section-content .cv-details .links:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.cv-section .section-content .cv-details .title{
+    font-size: var(--font-size-xl);
+    padding-top: 100px;
+}
+
+.cv-section .section-content .cv-details .cv-title{
+    font-size: var(--font-size-l);
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.cv-section .section-content .cv-details .work-exp{
+    display: flex;
+    justify-content: space-between;
+    font-family: inherit;
+    line-height: 1.3;
+}
+
+.cv-section .section-content .cv-details .work-exp .right-text{
+    text-align: right;
+}
+
+.cv-section .cv-details ul li{
+    list-style-type: disc;
+    margin-left: 30px;
+    font-size: var(--font-size-m);
+    text-align: justify;
+    line-height: 1.3;
+}
+
+.cv-section .cv-details .download-cv{
+    padding: 10px 26px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    font-size: var(--font-size-m);
+    transition: 0.3s ease;
+    text-align: center;
+    font-family: 'Poppins';
+    width: 25%;
+}
+
+.cv-section .cv-details .download-cv:hover{
+    text-decoration: none;
+    background: var(--primary-color);
+    color: #fff;
+
 }
 
 /* Resposive 1024px */

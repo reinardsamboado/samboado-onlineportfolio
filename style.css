@@ -606,14 +606,17 @@ header .navbar{
     transition: 0.3s ease;
     text-align: center;
     font-family: 'Poppins';
-    width: 25%;
+    width: 200px;
 }
 
 .cv-section .cv-details .download-cv:hover{
     text-decoration: none;
     background: var(--primary-color);
     color: #fff;
+}
 
+.cv-section .cv-details .char-reference{
+    text-align: left;
 }
 
 /* Resposive 1024px */
@@ -748,5 +751,8 @@ header .navbar{
     .footer-section .section-content{
         flex-direction: column;
         gap: 20px;
+    }
+    .cv-section .cv-details .char-reference li{
+        text-align: left;
     }
 }

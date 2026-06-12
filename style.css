@@ -506,7 +506,7 @@ header .navbar{
 
 .footer-section .social-link-list .social-link:hover,
 .footer-section .policy-text .policy-link:hover{
-    color: var(--secondary-color);
+    color: var(--light-pink-color);
 }
 
 .footer-section .policy-text .separator{
@@ -556,6 +556,16 @@ header .navbar{
     font-size: var(--font-size-m); 
     color: black;
     transition: 0.2s ease;
+}
+
+.email_links{
+    font-size: var(--font-size-m); 
+    color: blue;
+    transition: 0.2s ease;
+}
+
+.email_links:hover{
+    text-decoration: underline;
 }
 
 .cv-section .section-content .cv-details .links:visited{

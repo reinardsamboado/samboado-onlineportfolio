@@ -247,6 +247,26 @@ header .navbar{
     /* color: var(--white-color); */
 }
 
+.about-section .about-details .buttons{
+    text-align: center;
+}
+
+.about-section .about-details .button{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--white-color);
+    border-color: var(--primary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+
+.about-section .about-details .button:hover{
+    color: var(--white-color);
+    background: var(--primary-color);
+}
+
 .about-section .social-link-list{
     display: flex;
     gap: 25px;
@@ -367,7 +387,7 @@ header .navbar{
 .gallery-section .gallery-list{
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 24px;
 }
 
 .gallery-section .gallery-list .gallery-item{
@@ -627,6 +647,110 @@ header .navbar{
 
 .cv-section .cv-details .char-reference{
     text-align: left;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+    justify-content: center;  /* horizontal center */
+    align-items: center;
+    inset: 0;
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 60%;
+    max-height: 60vh;
+    width: auto;
+    height: auto;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: var(--white-color);
+    padding: 20px;
+    height: 150px;
+    font-size: 1.5rem;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/* Portfolio */
+.gallery{
+    margin: 0 auto;
+    column-width: 15vw;
+    column-gap: 25px;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.gallery img{
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  display: block;
+  break-inside: avoid;
+  box-shadow: 0 0 10px var(--text-color);
+}
+
+.gallery img:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    border: 2px solid #fff;
+}
+
+.gallery-details{
+    margin-top: 10%;
 }
 
 /* Resposive 1024px */
